@@ -21,7 +21,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ff0000;
+            background-color: #00ff66;
             flex-direction: column;
         }
         .calendar-container {
@@ -321,7 +321,7 @@
         document.getElementById('openThakurCalendar').addEventListener('click', () => {
             const pdfViewer = document.getElementById('pdfViewer');
             const pdfIframe = document.getElementById('pdfIframe');
-            pdfIframe.src = 'https://drive.google.com/viewerng/viewer?embedded=true&url=' + encodeURIComponent(window.location.origin + '/thakur.pdf');
+            pdfIframe.src = 'thakur.pdf';
             pdfViewer.style.display = 'flex';
         });
 
